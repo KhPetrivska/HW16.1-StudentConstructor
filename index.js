@@ -58,11 +58,13 @@ Student.prototype.summary = function () {
 
   if (avarageGrage > 90 && attendanceRate > 0.9) {
     return "Well done!";
-  } else if (avarageGrage > 90 || attendanceRate > 0.9) {
-    return "Good, but can be better.";
-  } else {
-    return "Radish!";
   }
+
+  if (avarageGrage > 90 || attendanceRate > 0.9) {
+  return "Good, but can be better.";
+  } 
+
+  return "Radish!";
 };
 
 // Examples
